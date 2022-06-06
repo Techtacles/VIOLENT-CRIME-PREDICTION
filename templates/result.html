@@ -1,0 +1,101 @@
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Crimester</title>
+	<meta name="viewport" content="">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+
+
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="/static/css/owl.carousel.min.css">
+	
+	<link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="/static/css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="/static/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<header>
+		<div class="container text-center">
+			<div class="fh5co-navbar-brand">
+				<a class="fh5co-logo" href="index.html">C R I M E S T E R </a>
+			</div>
+			<nav id="fh5co-main-nav" role="navigation">
+				<ul>
+					<li><a href="/" class="active">Predict Crime</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="owl-carousel owl-carousel1 owl-carousel-fullwidth fh5co-light-arrow animate-box" data-animate-effect="fadeIn">
+		<div class="item"><a href="images/Paasbaan.png" class="image-popup"><img src="images/Paasbaan.png" alt="image"></a></div>
+		<div class="item"><a href="images/crime density.jpg" class="image-popup"><img src="images/crime density.jpg" alt="image"></a></div>
+	</div>
+	<div align="center">
+	<form action = "{{ url_for('predict') }}" method = "POST">
+	<h4>The crime prediction for {{store_area}} in month {{store_month}} of year {{store_year}} is <b>{{prediction_text}}</b></h4>
+	<p>The police stations closest to your location is shown below</p>
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20827.28704152451!2d-123.11079896932111!3d49.268611156006784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1svancouver%20police%20department!5e0!3m2!1sen!2sng!4v1654446765093!5m2!1sen!2sng" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</form>
+	</div>
+	
+
+
+	<footer>
+		<div id="footer" class="fh5co-border-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<p>Copyright 2018 Crimester All Rights Reserved.</p>
+						<p class="fh5co-social-icons">
+							<a href="https://www.linkedin.com/in/sourabh-tiwari-08492a14a/"><i class="icon-linkedin-with-circle"></i></a>
+							<a href="#"><i class="icon-facebook-with-circle"></i></a>
+							<a href="#"><i class="icon-instagram-with-circle"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
