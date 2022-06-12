@@ -84,21 +84,7 @@
 			</nav>
 		</div>
 	</header>
-	<div class="fh5co-parallax" style="background-image: url(/static/images/140352-beautiful-army-background-1920x1080-for-android.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-					<div class="fh5co-intro fh5co-table-cell">
-						<h1 class="text-center">Report Crime</h1>
-						<p>"It's not how many criminal you catch, it's how many crime you prevent."
-							        </p>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div><!-- end: fh5co-parallax -->
+	<h1 style="text-align: center;">Report crime</h1>
 	<div id="fh5co-contact-section">
 		<div class="container">
 			<div class="row">
@@ -112,7 +98,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="form-group">
-								<input type="number" min="0" name="month" class="form-control" placeholder="Month">
+								<input type="text"  name="month" class="form-control" placeholder="Month">
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -126,12 +112,41 @@
 									<option value="Vehicle Collision" name="crime">Vehicle Collision</option>
 									<option value="Vehicle Theft">Vehicle Theft</option>
 									<option value="Robbery">Robbery</option>
+									<option value="Buglary">Other theft</option>
+									<option value="Other theft">Buglary</option>
 								</select>
 							</div>
 						</div>
 						<div class="col-md-12">
 							<div class="form-group" >
-								<input type="text" name="location" class="form-control" placeholder="Address">
+								<select  name="location" id="crime_type" class="form-control">
+									<option style="width: 1000px" value="Strathcona">Strathcona</option>
+									<option value="Central Business District">Central Business District</option>
+									<option value="West end">West end</option>
+									<option value="Fairview">Fairview</option>
+									<option value="Kitsilano">Kitsilano</option>
+									<option value="Arbutus ridge">Arbutus ridge</option>
+									<option value="Hastings-sunrise">Hastings-sunrise</option>
+									<option value="Kerrisdale">Kerrisdale</option>
+									<option value="Mount pleasant">Mount pleasant</option>
+									<option value="Kensinton-cedar cottage">Kensinton-cedar cottage</option>
+									<option value="Renfrew-collingwood">Renfrew-collingwood</option>
+									<option value="Oakridge">Oakridge</option>
+									<option value="Sunset">Sunset</option>
+									<option value="South cambie">South cambie</option>
+									<option value="Riley park">Riley park</option>
+									<option value="Shaughnessy">Shaughnessy</option>
+									<option value="Grandview-woodland">Grandview-woodland</option>
+									<option value="Killarney">Killarney</option>
+									<option value="Marpole">Marpole</option>
+									<option value="West point grey">West point grey</option>
+									<option value="Dunbar southlands">Dunbar southlands</option>
+									<option value="Stanley park">Stanley park</option>
+									<option value="Victoria fraserview">Victoria fraserview</option>
+									<option value="Musqueam">Musqueam</option><br>
+									
+										   
+										</div></select>
 							</div>
 						</div>
 						<div class="col-md-12">
@@ -144,8 +159,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="map" class="fh5co-map animate-box"></div>
-	<!-- END map -->
+	
 	<footer>
 		<div id="footer" class="fh5co-border-line">
 			<div class="container">
