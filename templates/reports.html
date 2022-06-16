@@ -96,6 +96,7 @@
                   <th>Year</th>
                   <th>Area</th>
                   <th>Crime</th>
+				  <th>Casualty</th>
                   <th>Date Created</th>
               </tr> 
               {% for i in reports %}
@@ -106,6 +107,7 @@
                   <td> {{i.year}} </td>
                   <td> {{i.area}} </td>
                   <td> {{i.crime}} </td>
+				  <td> {{i.casualties}} </td>
                   <td> {{i.timestamp}} </td>
               </tr>
               {% endfor %}

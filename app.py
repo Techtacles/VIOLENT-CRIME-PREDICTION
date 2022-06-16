@@ -37,6 +37,7 @@ class Crimes(db.Model):
     year = db.Column(db.Integer, unique=False, nullable=False)
     area = db.Column(db.String(150), unique=False, nullable=False)
     crime = db.Column(db.String(150), unique=False, nullable=False)
+    casualties=db.Column(db.Integer, unique=False, nullable=False)
     timestamp = db.Column(db.DateTime, server_default=db.func.current_timestamp())
 
     def __repr__(self):
@@ -71,7 +72,8 @@ def contact():
         year = request.form['year']
         crime = request.form['crime']
         location = request.form['location']
-        data = Crimes(day=day, month=month, year = year, crime = crime, area = location)
+        casualty=request.form['casualty']
+        data = Crimes(day=day, month=month, year = year, crime = crime, area = location,casualties=casualty)
         db.session.add(data)
         db.session.commit()
 
